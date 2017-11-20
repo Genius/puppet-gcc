@@ -12,9 +12,9 @@ class gcc {
       ensure_resource('homebrew::tap',
         'homebrew/versions', { 'ensure' => 'present' })
 
-      homebrew::formula { 'gcc7': }
+      homebrew::formula { 'gcc': }
 
-      package { 'boxen/brews/gcc7':
+      package { 'boxen/brews/gcc':
         ensure  => '7.2.0',
         require => Homebrew::Tap['homebrew/versions']
       }
