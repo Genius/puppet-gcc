@@ -14,7 +14,7 @@ class gcc {
 
       homebrew::formula { 'gcc': }
 
-      package { 'boxen/brews/gcc':
+      package { 'gcc':
         ensure  => '7.2.0',
         require => Homebrew::Tap['homebrew/versions']
       }
